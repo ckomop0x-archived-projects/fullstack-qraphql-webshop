@@ -1,18 +1,24 @@
-import React from 'react';
-import Link from 'next/link'
+import Link from 'next/link';
 import NavStyles from './styles/NavStyles';
 
-const Nav = () => {
-  return (
-    <NavStyles>
-      <Link href="/" prefetch>
-        <a>Home</a>
-      </Link>
-      <Link href="/sell" prefetch>
-        <a>Sell</a>
-      </Link>
-    </NavStyles>
-  );
-};
+const Nav = () => (
+  <NavStyles>
+    <Link href="/items">
+      <a>Items</a>
+    </Link>
+    <Link href="/sell">
+      <a>Sell</a>
+    </Link>
+    <Link href="/signup">
+      <a>Signup</a>
+    </Link>
+    <Link href="/orders">
+      <a>Orders</a>
+    </Link>
+    <Link href="/me">
+      <a>Account</a>
+    </Link>
+  </NavStyles>
+);
 
 export default Nav;

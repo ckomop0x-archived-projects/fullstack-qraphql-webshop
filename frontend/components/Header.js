@@ -1,8 +1,23 @@
 import React from 'react';
 import Link from 'next/link';
+import Router from 'next/router'
 import styled from 'styled-components';
+import NProgress from 'nprogress';
 import Nav from './Nav';
 
+
+Router.onRouteChangeStart = () => {
+    NProgress.start();
+  };
+  
+  Router.onRouteChangeComplete = () => {
+    NProgress.done();
+  };
+  
+  Router.onRouteChangeError = () => {
+    NProgress.done();
+  };
+  
 const Logo = styled.h1`
     font-size: 4rem;
     margin: 0;
@@ -54,8 +69,8 @@ const Header = () => (
                     <a>Sick Fits</a>
                 </Link>
             </Logo>
+            <Nav />
         </div>
-        <Nav />
         <div className="sub-bar">
             <p>Search</p>
         </div>

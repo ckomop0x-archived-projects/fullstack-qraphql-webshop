@@ -13,14 +13,12 @@ const Inner = styled.div`
     max-width: ${({ theme }) => theme.maxWidth};
     margin: 0 auto;
     padding: 2rem;
-    background: ${({ theme }) => theme.offWhite}
 `
 
 injectGlobal`
     @font-face {
         font-family: 'radnika_next';
-        src: url('/static/radnikanext-medium-webfont.woff2')
-        format('woff2');
+        src: url('/static/radnikanext-medium-webfont.woff2') format('woff2');
         font-weight: normal;
         font-style: normal;
     }
@@ -45,17 +43,20 @@ injectGlobal`
         text-decoration: none;
         color: ${theme.black};
     }
-`
+`;
 
-const Page = ({ children }) =>
-    (
+class Page extends Component {
+    render() {
+      return (
         <ThemeProvider theme={theme}>
-            <StyledPage>
-                <Meta />
-                <Header />
-                <Inner>{children}</Inner>
-            </StyledPage>
+          <StyledPage>
+            <Meta />
+            <Header />
+            <Inner>{this.props.children}</Inner>
+          </StyledPage>
         </ThemeProvider>
-    );
+      );
+    }
+  }
 
 export default Page;
