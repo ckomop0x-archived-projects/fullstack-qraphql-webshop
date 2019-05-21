@@ -82,5 +82,9 @@ Temporary Items
 
 .idea
 
+#backend
 backend/node_modules
+backend/variables.env
+
+#frontend
 frontend/node_modules
