@@ -1,4 +1,2 @@
-const Home = props => (    
-    <p>Hey!</p>
-)
-export default Home
+const Home = props => <p>Hey!</p>;
+export default Home;
