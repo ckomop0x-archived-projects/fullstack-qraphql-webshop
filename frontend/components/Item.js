@@ -1,15 +1,14 @@
 import React, { Component } from "react";
 import PropTypes, { number } from "prop-types";
+import Link from "next/link";
 import Title from "../components/styles/Title";
 import ItemStyles from "../components/styles/ItemStyles";
 import PriceTag from "../components/styles/PriceTag";
-import Link from "next/link";
 import formatMoney from "../lib/formatMoney";
 
 class Item extends Component {
   render() {
     const { item } = this.props;
-
     return (
       <ItemStyles>
         {item.image && <img src={item.image} alt={item.title} />}
