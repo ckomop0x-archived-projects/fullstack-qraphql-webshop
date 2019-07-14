@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Item = styled.div`
   background: white;
@@ -23,13 +23,14 @@ const Item = styled.div`
   .buttonList {
     display: grid;
     width: 100%;
-    border-top: 1px solid ${props => props.theme.lightGrey};
+    border-top: 1px solid ${props => props.theme.lightgrey};
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-gap: 1px;
-    background: ${props => props.theme.lightGrey};
+    background: ${props => props.theme.lightgrey};
     & > * {
       background: white;
       border: 0;
+      font-family: "radnika_next";
       font-size: 1rem;
       padding: 1rem;
     }

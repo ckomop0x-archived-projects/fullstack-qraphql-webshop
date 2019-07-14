@@ -93,10 +93,10 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
-/***/ "./components/Header.js":
-/*!******************************!*\
-  !*** ./components/Header.js ***!
-  \******************************/
+/***/ "./components/Header.jsx":
+/*!*******************************!*\
+  !*** ./components/Header.jsx ***!
+  \*******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -112,8 +112,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! nprogress */ "nprogress");
 /* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(nprogress__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _Nav__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Nav */ "./components/Nav.js");
-var _jsxFileName = "/Users/pklochkov/GitHub/fullstack-qraphql-webshop/frontend/components/Header.js";
+/* harmony import */ var _Nav__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Nav */ "./components/Nav.jsx");
+var _jsxFileName = "/Users/pklochkov/GitHub/fullstack-qraphql-webshop/frontend/components/Header.jsx";
 
 
 
@@ -135,7 +135,7 @@ next_router__WEBPACK_IMPORTED_MODULE_2___default.a.onRouteChangeError = function
 
 var Logo = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.h1.withConfig({
   displayName: "Header__Logo",
-  componentId: "sc-2cpreo-0"
+  componentId: "km2hv5-0"
 })(["font-size:4rem;margin:0;position:relative;text-align:center;z-index:2;transform:skew(-7deg);@media (min-width:", "px){margin:auto;margin-left:2rem;text-align:left;}a{padding:0.5rem 1rem;background:", ";color:white;text-transform:uppercase;text-decoration:none;}"], function (_ref) {
   var theme = _ref.theme;
   return theme.$LG + 1;
@@ -145,7 +145,7 @@ var Logo = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.h1.withConfi
 });
 var StyledHeader = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.header.withConfig({
   displayName: "Header__StyledHeader",
-  componentId: "sc-2cpreo-1"
+  componentId: "km2hv5-1"
 })([".bar{border-bottom:10px solid ", ";display:grid;grid-template-columns:1fr;justify-content:center;align-items:stretch;@media (min-width:", "px){grid-template-columns:auto 1fr;justify-content:space-between;}}.sub-bar{display:grid;grid-template-columns:auto 1fr;border-bottom:1px solid ", ";}"], function (_ref3) {
   var theme = _ref3.theme;
   return theme.black;
@@ -222,10 +222,10 @@ var Header = function Header() {
 
 /***/ }),
 
-/***/ "./components/Meta.js":
-/*!****************************!*\
-  !*** ./components/Meta.js ***!
-  \****************************/
+/***/ "./components/Meta.jsx":
+/*!*****************************!*\
+  !*** ./components/Meta.jsx ***!
+  \*****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -235,7 +235,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "next/head");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/pklochkov/GitHub/fullstack-qraphql-webshop/frontend/components/Meta.js";
+var _jsxFileName = "/Users/pklochkov/GitHub/fullstack-qraphql-webshop/frontend/components/Meta.jsx";
 
 
 
@@ -291,10 +291,10 @@ var Meta = function Meta() {
 
 /***/ }),
 
-/***/ "./components/Nav.js":
-/*!***************************!*\
-  !*** ./components/Nav.js ***!
-  \***************************/
+/***/ "./components/Nav.jsx":
+/*!****************************!*\
+  !*** ./components/Nav.jsx ***!
+  \****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -305,7 +305,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "next/link");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _styles_NavStyles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/NavStyles */ "./components/styles/NavStyles.js");
-var _jsxFileName = "/Users/pklochkov/GitHub/fullstack-qraphql-webshop/frontend/components/Nav.js";
+var _jsxFileName = "/Users/pklochkov/GitHub/fullstack-qraphql-webshop/frontend/components/Nav.jsx";
 
 
 
@@ -389,10 +389,10 @@ var Nav = function Nav() {
 
 /***/ }),
 
-/***/ "./components/Page.js":
-/*!****************************!*\
-  !*** ./components/Page.js ***!
-  \****************************/
+/***/ "./components/Page.jsx":
+/*!*****************************!*\
+  !*** ./components/Page.jsx ***!
+  \*****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -402,10 +402,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
-/* harmony import */ var _Meta__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Meta */ "./components/Meta.js");
+/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Header */ "./components/Header.jsx");
+/* harmony import */ var _Meta__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Meta */ "./components/Meta.jsx");
 /* harmony import */ var _styles_mainTheme__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles/mainTheme */ "./components/styles/mainTheme.js");
-var _jsxFileName = "/Users/pklochkov/GitHub/fullstack-qraphql-webshop/frontend/components/Page.js";
+var _jsxFileName = "/Users/pklochkov/GitHub/fullstack-qraphql-webshop/frontend/components/Page.jsx";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -444,14 +444,14 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 var StyledPage = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
   displayName: "Page__StyledPage",
-  componentId: "sc-4u7a64-0"
+  componentId: "xe6w3c-0"
 })(["background:white;color:", ";"], function (_ref) {
   var theme = _ref.theme;
   return theme.black;
 });
 var Inner = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
   displayName: "Page__Inner",
-  componentId: "sc-4u7a64-1"
+  componentId: "xe6w3c-1"
 })(["max-width:", ";margin:0 auto;padding:2rem;"], function (_ref2) {
   var theme = _ref2.theme;
   return theme.maxWidth;
@@ -629,7 +629,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_app__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_Page__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Page */ "./components/Page.js");
+/* harmony import */ var _components_Page__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Page */ "./components/Page.jsx");
 /* harmony import */ var react_apollo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-apollo */ "react-apollo");
 /* harmony import */ var react_apollo__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_apollo__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _lib_withData__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../lib/withData */ "./lib/withData.js");

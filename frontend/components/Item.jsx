@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import PropTypes, { number } from "prop-types";
 import Link from "next/link";
-import Title from "../components/styles/Title";
-import ItemStyles from "../components/styles/ItemStyles";
-import PriceTag from "../components/styles/PriceTag";
+import Title from "./styles/Title";
+import ItemStyles from "./styles/ItemStyles";
+import PriceTag from "./styles/PriceTag";
 import formatMoney from "../lib/formatMoney";
 
 class Item extends Component {
@@ -12,6 +12,7 @@ class Item extends Component {
     return (
       <ItemStyles>
         {item.image && <img src={item.image} alt={item.title} />}
+
         <Title>
           <Link
             href={{
@@ -22,11 +23,6 @@ class Item extends Component {
             <a>{item.title}</a>
           </Link>
         </Title>
-
-        <div>{}</div>
-
-        <div>{item.image}</div>
-        <div>{item.largeImage}</div>
         <PriceTag>{formatMoney(item.price)}</PriceTag>
         <p>{item.description}</p>
 
@@ -39,8 +35,8 @@ class Item extends Component {
           >
             <a>Edit ✏️</a>
           </Link>
-          <button>Add to cart</button>
-          <button>Delete</button>
+          {/* <AddToCart id={item.id} /> */}
+          {/* <DeleteItem id={item.id}>Delete This Item</DeleteItem> */}
         </div>
       </ItemStyles>
     );
