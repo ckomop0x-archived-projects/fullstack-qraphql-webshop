@@ -1,10 +1,11 @@
-import React, { Component } from "react";
-import PropTypes, { number } from "prop-types";
-import Link from "next/link";
-import Title from "./styles/Title";
-import ItemStyles from "./styles/ItemStyles";
-import PriceTag from "./styles/PriceTag";
-import formatMoney from "../lib/formatMoney";
+import React, { Component } from 'react';
+import PropTypes, { number } from 'prop-types';
+import Link from 'next/link';
+import Title from './styles/Title';
+import ItemStyles from './styles/ItemStyles';
+import PriceTag from './styles/PriceTag';
+import formatMoney from '../lib/formatMoney';
+import DeleteItem from './DeleteItem';
 
 class Item extends Component {
   render() {
@@ -16,7 +17,7 @@ class Item extends Component {
         <Title>
           <Link
             href={{
-              pathname: "/item",
+              pathname: '/item',
               query: { id: item.id }
             }}
           >
@@ -29,14 +30,14 @@ class Item extends Component {
         <div className="buttonList">
           <Link
             href={{
-              pathname: "update",
+              pathname: 'update',
               query: { id: item.id }
             }}
           >
             <a>Edit ✏️</a>
           </Link>
           {/* <AddToCart id={item.id} /> */}
-          {/* <DeleteItem id={item.id}>Delete This Item</DeleteItem> */}
+          <DeleteItem id={item.id}>Delete This Item</DeleteItem>
         </div>
       </ItemStyles>
     );

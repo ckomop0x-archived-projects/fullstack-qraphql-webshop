@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import { Mutation } from "react-apollo";
-import gql from "graphql-tag";
-import Router from "next/router";
-import Form from "./styles/Form";
-import formatMoney from "../lib/formatMoney";
-import { ErrorMessage } from "../components";
+import React, { Component } from 'react';
+import { Mutation } from 'react-apollo';
+import gql from 'graphql-tag';
+import Router from 'next/router';
+import Form from './styles/Form';
+import formatMoney from '../lib/formatMoney';
+import { ErrorMessage } from '../components';
 
 export const CREATE_ITEM_MUTATION = gql`
   mutation CREATE_ITEM_MUTATION(
@@ -28,16 +28,16 @@ export const CREATE_ITEM_MUTATION = gql`
 
 class CreateItem extends Component {
   state = {
-    title: "",
-    description: "",
-    image: "",
-    largeImage: "",
+    title: '',
+    description: '',
+    image: '',
+    largeImage: '',
     price: 0
   };
 
   handleChange = event => {
     const { value, type, name } = event.target;
-    const parsedValue = type === "number" ? parseFloat(value, 10) : value;
+    const parsedValue = type === 'number' ? parseFloat(value, 10) : value;
 
     this.setState({
       [name]: parsedValue
@@ -47,17 +47,17 @@ class CreateItem extends Component {
   uploadFile = async event => {
     // Get list of files
     const files = event.target.files;
-    console.log("uploading file...", files);
+    console.log('uploading file...', files);
     // Prepare files
     const data = new FormData();
-    data.append("file", files[0]);
-    data.append("upload_preset", "sickfits");
-    console.log("Prepared data...", data);
+    data.append('file', files[0]);
+    data.append('upload_preset', 'sickfits');
+    console.log('Prepared data...', data);
 
     const res = await fetch(
-      "https://api.cloudinary.com/v1_1/ckomop0x/image/upload",
+      'https://api.cloudinary.com/v1_1/ckomop0x/image/upload',
       {
-        method: "POST",
+        method: 'POST',
         body: data
       }
     );
@@ -81,7 +81,7 @@ class CreateItem extends Component {
               const res = await createItem();
               // change them to the single item page
               Router.push({
-                pathname: "/item",
+                pathname: '/item',
                 query: {
                   id: res.data.createItem.id
                 }
@@ -98,7 +98,7 @@ class CreateItem extends Component {
                   id="file"
                   name="file"
                   placeholder="Upload an image"
-                  required
+                  // required
                   onChange={this.uploadFile}
                 />
                 {this.state.image && (
