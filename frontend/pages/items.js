@@ -1,11 +1,11 @@
-import { Items } from "../components";
+import { Items } from '../components';
 
 const Home = props => {
   console.log(props);
 
   return (
     <div>
-      <Items />
+      <Items page={parseFloat(props.query.page) || 1} />
     </div>
   );
 };

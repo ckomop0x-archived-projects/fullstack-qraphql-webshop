@@ -3,10 +3,12 @@ import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
 import styled from 'styled-components';
 import Item from './Item';
+import Pagination from './Pagination';
+import { perPage } from '../config';
 
 export const ALL_ITEMS_QUERY = gql`
-  query ALL_ITEMS_QUERY {
-    items {
+  query ALL_ITEMS_QUERY($skip: Int = 0, $first: Int = ${perPage}) {
+    items(first: $first, skip: $skip, orderBy: createdAt_DESC) {
       id
       title
       price
@@ -31,28 +33,34 @@ const ItemsList = styled.div`
   margin: 0 auto;
 `;
 
-class Items extends Component {
-  render() {
-    return (
-      <div>
-        <Query query={ALL_ITEMS_QUERY} ssr={true}>
-          {({ data, error, loading }) => {
-            if (error) return <p>We got an error {error.message}</p>;
-            if (loading) return <p>We load a data for you...</p>;
-            return data ? (
-              <Center>
-                <ItemsList>
-                  {data.items.map(item => (
-                    <Item item={item} key={item.id} />
-                  ))}
-                </ItemsList>
-              </Center>
-            ) : null;
-          }}
-        </Query>
-      </div>
-    );
-  }
-}
+const Items = props => {
+  return (
+    <div>
+      <Query
+        query={ALL_ITEMS_QUERY}
+        ssr={true}
+        variables={{
+          skip: props.page * perPage - perPage
+        }}
+      >
+        {({ data, error, loading }) => {
+          if (error) return <p>We got an error {error.message}</p>;
+          if (loading) return <p>We load a data for you...</p>;
+          return data ? (
+            <Center>
+              <Pagination page={props.page} />
+              <ItemsList>
+                {data.items.map(item => (
+                  <Item item={item} key={item.id} />
+                ))}
+              </ItemsList>
+              <Pagination page={props.page} />
+            </Center>
+          ) : null;
+        }}
+      </Query>
+    </div>
+  );
+};
 
 export default Items;
